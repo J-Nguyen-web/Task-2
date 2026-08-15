@@ -4,6 +4,12 @@
 *.userosscache
 *.sln.docstates
 
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+.terraform/
+
 [Bb]in/
 [Oo]bj/
 [Dd]ebug/

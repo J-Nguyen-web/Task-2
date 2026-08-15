@@ -1,0 +1,10 @@
+resource_group_name     = "softuni-homies-rg"
+resource_group_location = "italynorth"
+app_service_plan_name   = "homies-nguyen-asp"
+app_name                = "homies-nguyen-app" //unique
+server_name             = "homies-nguyen-server"
+database_name           = "homies-nguyen-database"
+admin_login             = "4dm1n157r470r"          //"4dm1n157r470r"
+admin_password          = "4-v3ry-53cr37-p455w0rd" //"4-v3ry-53cr37-p455w0rd"
+firewall_rule_name      = "firewall-nguyen-rule"
+repo_url                = "https://github.com/J-Nguyen-web/Task-2" //"GIT HUB REPO LINK"

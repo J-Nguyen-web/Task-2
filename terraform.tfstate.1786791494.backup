@@ -1,0 +1,101 @@
+{
+  "version": 4,
+  "terraform_version": "1.15.8",
+  "serial": 74,
+  "lineage": "af235b6e-876b-56f5-3e9a-2d0bea54dfac",
+  "outputs": {
+    "server_name": {
+      "value": "homies-nguyen-server",
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "azurerm_mssql_server",
+      "name": "ams",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "status": "tainted",
+          "schema_version": 0,
+          "attributes": {
+            "administrator_login": "4dm1n157r470r",
+            "administrator_login_password": "4-v3ry-53cr37-p455w0rd",
+            "administrator_login_password_wo": null,
+            "administrator_login_password_wo_version": null,
+            "azuread_administrator": [],
+            "connection_policy": "Default",
+            "express_vulnerability_assessment_enabled": false,
+            "fully_qualified_domain_name": null,
+            "id": "/subscriptions/c883cd5b-bc62-4879-8d88-35ea893287c6/resourceGroups/softuni-homies-rg/providers/Microsoft.Sql/servers/homies-nguyen-server",
+            "identity": [],
+            "location": "italynorth",
+            "minimum_tls_version": "1.2",
+            "name": "homies-nguyen-server",
+            "outbound_network_restriction_enabled": false,
+            "primary_user_assigned_identity_id": null,
+            "public_network_access_enabled": true,
+            "resource_group_name": "softuni-homies-rg",
+            "restorable_dropped_database_ids": null,
+            "tags": null,
+            "timeouts": null,
+            "transparent_data_encryption_key_vault_key_id": null,
+            "version": "12.0"
+          },
+          "sensitive_attributes": [
+            [
+              {
+                "type": "get_attr",
+                "value": "administrator_login_password"
+              }
+            ],
+            [
+              {
+                "type": "get_attr",
+                "value": "administrator_login_password_wo"
+              }
+            ]
+          ],
+          "identity_schema_version": 0,
+          "identity": {
+            "name": "homies-nguyen-server",
+            "resource_group_name": "softuni-homies-rg",
+            "subscription_id": "c883cd5b-bc62-4879-8d88-35ea893287c6"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjozNjAwMDAwMDAwMDAwLCJkZWxldGUiOjM2MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjozNjAwMDAwMDAwMDAwfX0=",
+          "dependencies": [
+            "azurerm_resource_group.arg"
+          ]
+        }
+      ]
+    },
+    {
+      "mode": "managed",
+      "type": "azurerm_resource_group",
+      "name": "arg",
+      "provider": "provider[\"registry.terraform.io/hashicorp/azurerm\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "id": "/subscriptions/c883cd5b-bc62-4879-8d88-35ea893287c6/resourceGroups/softuni-homies-rg",
+            "location": "italynorth",
+            "managed_by": "",
+            "name": "softuni-homies-rg",
+            "tags": null,
+            "timeouts": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "identity": {
+            "name": "softuni-homies-rg",
+            "subscription_id": "c883cd5b-bc62-4879-8d88-35ea893287c6"
+          },
+          "private": "eyJlMmJmYjczMC1lY2FhLTExZTYtOGY4OC0zNDM2M2JjN2M0YzAiOnsiY3JlYXRlIjo1NDAwMDAwMDAwMDAwLCJkZWxldGUiOjU0MDAwMDAwMDAwMDAsInJlYWQiOjMwMDAwMDAwMDAwMCwidXBkYXRlIjo1NDAwMDAwMDAwMDAwfX0="
+        }
+      ]
+    }
+  ],
+  "check_results": null
+}
